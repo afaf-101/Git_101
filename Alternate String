@@ -1,0 +1,14 @@
+def alternate_string(word):
+  idx= 0
+  output= ""
+  len_string= len(word)
+
+  while idx < len_string:
+    if idx % 2 == 0:
+    #to alternate another way: "if idx % 2 != 0:"
+      output= output+ word[idx]
+    idx=idx+1
+  return(output)
+
+word = input("Please enter a string")
+print(alternate_string(word))
